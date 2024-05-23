@@ -16,8 +16,8 @@
             margin : 0;
             position : fixed;
             display : flex;
-            align-items : center; <!-- 아이템들을 수직으로 가운데 정렬 -->
-            flex-direction : row; <!-- row를 사용해서 아이템 수평으로 나란히 -->
+            align-items : center; /* 아이템들을 수직으로 가운데 정렬 */
+            flex-direction : row; /* row를 사용해서 아이템 수평으로 나란히 */
             justify-content: space-around;
             width : 100%;
             height:102px;
@@ -64,6 +64,7 @@
         }
         header {
             margin : 0;
+            display : flex;
             width : 100%;
             height : 900px;
             background-color : #F2E9D8;
@@ -99,7 +100,7 @@
             font-size : 48px;
 
         }
-        .h2{
+        .p1{
             margin : 0;
             font-family : 'Pretendard';
             font-size : 16px;
@@ -116,20 +117,155 @@
             font-size : 16px;
             color : #FFFFFF;
         }
+        .sec2 {
+            margin : 0;
+            display : flex;
+            flex-direction : row;
+            position : relative;
+            top : 80px;
+            left : 320px
+        }
+        .group4{
+            margin : 0;
+            display : flex;
+            flex-direction : column;
+            gap : 30px;
+            position : relative;
+            top : 172px;
+            left : 320px
+        }
+        .h2{
+            margin : 0;
+            font-family : 'Pretendard';
+            font-size : 36px;
+        }
+        .p2 {
+            margin : 0;
+            font-family : 'Pretendard';
+            font-size : 16px;
+        }
 
+        .sec3 {
+            margin : 0;
+            display : flex;
+            flex-direction : column;
+            align-items: center;
+            gap : 40px;
+            position : relative;
+            top : 120px;
+        }
+        .h3{
+            margin : 0;
+            font-family : 'Pretendard';
+            font-size : 48px;
+            color : #D97652;
+            display : flex;
+            /*justify-content: center;*/
+        }
+        .p3{
+            margin : 0;
+            font-family : 'Pretendard';
+            font-size : 16px;
+/*            display : flex;*/
+/*            align-items: center;*/
+        }
+        .spantag{
+            display : flex;
+/*            align-items: center;*/
+/*            color : #D97652;*/
+        }
+        main>article{
+            margin : 0;
+            display : flex;
+            flex-direction : column; /*article 안 요소들 수직으로 배치*/
+            /*요소들 가운데 정렬*/
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec4{
+            margin : 0;
+            /*display : flex;
+            flex-direction : column;*/
+            list-style-type: none; /*li .없애기*/
+
+            gap : 72px;
+            position : relative;
+            /*top : 300px;*/
+            width : 50%;
+        }
+        article section ul{
+            margin : 0;
+            display : flex;
+            gap : 72px;
+            list-style-type: none;
+            /*요소들 가운데 정렬*/
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            /*아이템들이 컨테이너 내부에 꽉차서 넘칠경우 줄바꿈함*/
+            flex-wrap : wrap;
+
+        }
     </style>
 
 </head>
 <body>
-<header>
-    <nav>
-        <img src="Logo-fin.png" alt="호두"><div class = "group1"><div class="group2"><p>Home</p><p>About</p><p>Support</p></div><button class='btnDL'>Download</button></div>
-    </nav>
-    <section class ="sec1">
-        <div class="group3"><h1 class="h1">Lorem Ipsum is simply<br>dummy text of the printing and</h1><h2 class="h2">Lorem Ipsum is simply dummy text of the printing and<br>
-            typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown</h2><button class="btnDL2">Download</button></div> <img class="imgCat" src="img_cat_png.png" alt="고양이">
-    </section>
+    <header>
+        <nav>
+            <img src="Logo-fin.png" alt="HODU">
+            <div class = "group1"><div class="group2"><p>Home</p><p>About</p><p>Support</p></div><button class='btnDL'>Download</button></div>
+        </nav>
+        <section class ="sec1">
+            <div class="group3">
+                <h1 class="h1">Lorem Ipsum is simply<br>dummy text of the printing and</h1>
+                <p class="p1">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown</p>
+                <button class="btnDL2">Download</button>
+            </div>
+            <img class="imgCat" src="img_cat_png.png" alt="박스뒤집어쓴고양이사진">
+        </section>
+    </header>
+    <main>
+        <section class="sec2">
+            <img src="img_4.png" alt="누워있는고양이사진">
+            <div class="group4">
+                <h2 class="h2">Lorem Ipsum is simply<br>dummy text of the printing and dummy text</h2>
+                <p class="p2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+        </section>
+        <article>
+            <section class="sec3">
+                <h3 class="h3">dummy text of the printing and dummy</h3>
+                <p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            </section>
+<!--    고양이 사진 여러장-->
+            <section class="sec4">
+                <ul>
+                    <li><img src="https://picsum.photos/id/237/378/378"></li>
+                    <li><img src="https://picsum.photos/id/237/378/378"></li>
+                    <li><img src="https://picsum.photos/id/237/378/378"></li>
+                    <li><img src="https://picsum.photos/id/237/378/378"></li>
+                    <li><img src="https://picsum.photos/id/237/378/378"></li>
+                    <li><img src="https://picsum.photos/id/237/378/378"></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Continue exploring HODU</h4>
+                <button>Show more</button>
+            </section>
+        </article>
+        <section>
+            <hr>
+            <section>
+                <p>Where you’ll be</p>
+                <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+            </section>
+            <div id="map"></div>
+        </section>
+    </main>
 
-</header>
+    <footer>
+
+    </footer>
 </body>
 </html>
