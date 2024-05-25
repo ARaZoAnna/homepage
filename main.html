@@ -197,6 +197,35 @@
             background-color : #D97652;
             color : #FFFFFF;
         }
+/*지도 부분*/
+        .sec6{
+            display : flex;
+            flex-direction : column;
+            gap : 48px;
+        }
+        hr {
+            margin-top : 80px;
+            margin-bottom : 20px;
+        }
+        .sec6-div {
+            display : flex;
+            flex-direction : column;
+            gap : 20px;
+        }
+        h5 {
+            font-size : 35px;
+            color : #000000;
+        }
+        .p5 {
+            font-size : 16px;
+            color : #606367;
+        }
+        .sec6-div2-map {
+            width : 1361px;
+            height : 572px;
+            background-color : #606367;
+        }
+
 
     </style>
 
@@ -264,13 +293,14 @@
                 <button class="btnSM">Show more</button>
             </section>
         </article>
-        <section>
+
+        <section class="sec6">
             <hr>
-            <section>
-                <p>Where you’ll be</p>
-                <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-            </section>
-            <div id="map"></div>
+            <div class="sec6-div1">
+                <h5>Where you’ll be</h5>
+                <p class="p5">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+            </div>
+            <div class="sec6-div2-map" id="map"></div>
         </section>
     </main>
 
