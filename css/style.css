@@ -1,0 +1,117 @@
+        /*폰트*/
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+        *{
+            margin : 0;
+            font-family : 'Pretendard';
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+/*header*/
+        header {
+            background-color : #F2E9D8;
+        }
+
+/*nav 시작*/
+            nav div ul a {
+                color : #000000;
+            }
+            nav div ul a li {
+                font-size : 16px;
+            }
+
+            .btnDL {
+                font-size : 16px;
+                border : none;
+                border-radius : 40px;
+                background-color : #D97652;
+                color : #FFFFFF;
+            }
+/*head 나머지 */
+            .h1 {
+                font-size : 48px;
+            }
+            .p1{
+                font-size : 16px;
+            }
+            .btnDL2 {
+                border : none;
+                border-radius : 40px;
+                background-color : #D97652;
+                font-size : 16px;
+                color : #FFFFFF;
+            }
+/*main 시작*/
+/*section*/
+            .h2{
+                font-size : 36px;
+            }
+            .p2 {
+                font-size : 16px;
+            }
+/*article*/
+            .h3{
+                font-size : 48px;
+                color : #D97652;
+            }
+            .p3{
+                font-size : 16px;
+            }
+            #sntag {
+                  color : #D97652;
+            }
+/*강아지 사진들*/
+
+/*section*/
+            h4 {
+                font-size : 24px;
+                color : #000000;
+            }
+            .btnSM {
+                font-size : 16px;
+                border : none;
+                border-radius : 40px;
+                background-color : #D97652;
+                color : #FFFFFF;
+            }
+/*지도 부분*/
+            h5 {
+                font-size : 35px;
+                color : #000000;
+            }
+            .p5 {
+                font-size : 16px;
+                color : #606367;
+            }
+            .sec6-div2-map {
+                background-color : #606367;/*임시 색상*/
+            }
+/*subscribe*/
+            .sec7-subscribe{
+                border-radius : 30px;
+                background-color :#263140;
+            }
+            h6 {
+                font-size : 36px;
+                color : #FFFFFF;
+            }
+            .p6 {
+                font-size : 14px;
+                color : #F2E9D8;
+            }
+            .div-mail {
+                background-color : #FFFFFF;
+                border-radius : 60px;
+            }
+            .btn-subscribe {
+                font-size : 16px;
+                border : none;
+                border-radius : 40px;
+                background-color : #D97652;
+                color : #FFFFFF;
+            }

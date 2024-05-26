@@ -1,0 +1,207 @@
+
+/*header*/
+            header {
+                display : flex;
+                flex-direction : column;
+                align-items : center;/* 아이템들을 수직으로 가운데 정렬 */
+                width : 100%;
+                height : 900px;
+            }
+
+/*nav 시작*/
+            nav {
+                display : flex;
+                align-items : center; /* 아이템들을 수직 가운데 정렬 */
+                flex-direction : row; /* row를 사용해서 아이템 수평으로 나란히 */
+                gap : 756px; /*이미지와 div 사이 갭*/
+                width : fit-content;/*자식 크기에 맞게 전체 크기 설정*/
+                height:102px;
+            }
+            nav img{
+                display : flex;
+                align-items : center;/*수직 가운데 정렬*/
+            }
+            nav div {
+                display: flex;
+                flex-direction : row;
+                gap : 49px;
+            }
+            nav div ul {
+                display : flex;
+                gap : 30px;
+                align-items : center;
+                padding : 0;
+            }
+            .btnDL {
+                width :140px;
+                height : 50px;
+            }
+/*head 나머지 */
+            .sec1 {
+                display : flex;
+                flex-direction : row;
+                gap : 170px;
+                }
+            .imgCat {
+                width : 415px;
+                height : 766px;
+                margin-top : 34px;
+            }
+            .hd-div{
+                display : flex;
+                flex-direction : column;
+                justify-content: center; /*수평 가운데 정렬*/
+                gap : 40px;
+            }
+            .btnDL2 {
+                width : 140px;
+                height : 50px;
+            }
+/*main 시작*/
+/*section*/
+            main {
+                display : flex;
+                flex-direction : column;
+                align-items : center;
+                justify-content : center;
+            }
+            .sec2 {
+                display : flex;
+                flex-direction : row;
+                align-items : center;
+                justify-content : center;
+                padding-top : 80px;
+                padding-bottom : 120px;
+                width : fit-content;
+            }
+            .sec2-div{
+                display : flex;
+                flex-direction : column;
+                gap : 30px;
+            }
+/*article*/
+            main article{
+                display : flex;
+                flex-direction : column; /*article 안 요소들 수직으로 배치*/
+                /*요소들 가운데 정렬
+                text-align: center;*/
+                justify-content: center;
+                align-items: center;
+            }
+            .sec3 {
+                display : flex;
+                flex-direction : column;
+                align-items: center;
+                text-align : center; /*텍스트 방향*/
+                gap : 40px;
+                margin-bottom : 88px;
+            }
+/*강아지 사진들*/
+            .sec4{
+                width : 50%; /*사진 나열할 너비 비율*/
+            }
+            article section ul{
+                display : flex;
+                gap : 72px;
+                /*요소들 가운데 정렬*/
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                /*아이템들이 컨테이너 내부에 꽉차서 넘칠경우 줄바꿈함*/
+                flex-wrap : wrap;
+            }
+/*section*/
+            .sec5 {
+                margin-top : 100px;
+                display : flex;
+                flex-direction : column;
+                gap : 28px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .btnSM {
+                width :143px;
+                height : 50px;
+            }
+/*지도 부분*/
+            .sec6{
+                display : flex;
+                flex-direction : column;
+                gap : 48px;
+            }
+            hr {
+                margin-top : 80px;
+                margin-bottom : 20px;
+            }
+            .sec6-div {
+                display : flex;
+                flex-direction : column;
+                gap : 20px;
+            }
+            .sec6-div2-map {
+                width : 1361px;
+                height : 572px;
+                        }
+/*subscribe*/
+            .sec7-subscribe{
+                width : 1280px;
+                height : 200px;
+                display : flex;
+                flex-direction : row;
+                justify-content: center;
+                align-items: center;
+                gap : 163px;
+                position : relative;
+                top : 80px;
+
+            }
+            .div-subscribe {
+                display : flex;
+                flex-direction : column;
+                gap : 18px;
+            }
+            .div-mail {
+                display : flex;
+                flex-direction : row;
+                /*justify-content: center;*/
+                align-items: center;
+                width : 530px;
+                height : 60px;
+            }
+            .img-email{
+                margin-left : 30px;
+            }
+            .input {
+                border-width: 0;
+                width : 184px;
+                height: 20px;
+                margin-left : 16px;
+                margin-right : 133px;
+            }
+            .btn-subscribe {
+                width :135px;
+                height : 50px;
+            }
+/*footer*/
+            footer {
+                display : flex;
+                justify-content: center;
+                height : 160px;
+            }
+            .footer-div {
+                display : flex;
+                flex-direction : row;
+                align-items: center;
+                gap : 826px;
+                width : fit-content;
+            }
+            .footer-logo {
+                width : 226px;
+                height : 70px;
+            }
+            .footer-ul {
+                display : flex;
+                flex-direction : row;
+                align-items: center;
+            }

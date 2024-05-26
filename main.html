@@ -5,309 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/frame.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>main</title>
-    <style>
-        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
-
-
-        *{
-            margin : 0;
-            font-family : 'Pretendard';
-        }
-        li{
-            list-style: none;
-        }
-        a{
-            text-decoration: none;
-        }
-
-/*header*/
-        header {
-            display : flex;
-            flex-direction : column;
-            align-items : center;/* 아이템들을 수직으로 가운데 정렬 */
-            width : 100%;
-            height : 900px;
-            background-color : #F2E9D8;
-            /*justify-content: center;*/
-        }
-/*nav 시작*/
-        nav {
-            display : flex;
-            align-items : center; /* 아이템들을 수직 가운데 정렬 */
-            flex-direction : row; /* row를 사용해서 아이템 수평으로 나란히 */
-            gap : 756px; /*이미지와 div 사이 갭*/
-            width : fit-content;/*자식 크기에 맞게 전체 크기 설정*/
-            height:102px;
-
-        }
-        nav img{
-            display : flex;
-            align-items : center;/*수직 가운데 정렬*/
-        }
-        nav div {
-            display: flex;
-            flex-direction : row;
-            gap : 49px;
-        }
-        nav div ul {
-            display : flex;
-            gap : 30px;
-            align-items : center;
-            padding : 0;
-        }
-        nav div ul a {
-            color : #000000;
-        }
-        nav div ul a li {
-            font-size : 16px;
-        }
-        .btnDL {
-            width :140px;
-            height : 50px;
-            font-size : 16px;
-            border : none;
-            border-radius : 40px;
-            background-color : #D97652;
-            color : #FFFFFF;
-        }
-/*nav 완료*/
-        .sec1 {
-            display : flex;
-            flex-direction : row;
-            gap : 170px;
-            }
-        .imgCat {
-            width : 415px;
-            height : 766px;
-            margin-top : 34px;
-        }
-        .hd-div{
-            display : flex;
-            flex-direction : column;
-            justify-content: center; /*수평 가운데 정렬*/
-            gap : 40px;
-        }
-        .h1 {
-            font-size : 48px;
-        }
-        .p1{
-            font-size : 16px;
-        }
-        .btnDL2 {
-            width : 140px;
-            height : 50px;
-            border : none;
-            border-radius : 40px;
-            background-color : #D97652;
-            font-size : 16px;
-            color : #FFFFFF;
-        }
-/*head 완료 */
-/*main 시작*/
-/*section*/
-        main {
-            display : flex;
-            flex-direction : column;
-            align-items : center;
-            justify-content : center;
-        }
-        .sec2 {
-            display : flex;
-            flex-direction : row;
-            align-items : center;
-            justify-content : center;
-            padding-top : 80px;
-            padding-bottom : 120px;
-            width : fit-content;
-        }
-        .sec2-div{
-            display : flex;
-            flex-direction : column;
-            gap : 30px;
-        }
-        .h2{
-            font-size : 36px;
-        }
-        .p2 {
-            font-size : 16px;
-        }
-/*article*/
-        main article{
-            display : flex;
-            flex-direction : column; /*article 안 요소들 수직으로 배치*/
-            /*요소들 가운데 정렬
-            text-align: center;*/
-            justify-content: center;
-            align-items: center;
-        }
-        .sec3 {
-            display : flex;
-            flex-direction : column;
-            align-items: center;
-            text-align : center; /*텍스트 방향*/
-            gap : 40px;
-            margin-bottom : 88px;
-        }
-        .h3{
-            font-size : 48px;
-            color : #D97652;
-        }
-        .p3{
-            font-size : 16px;
-        }
-        #sntag {
-              color : #D97652;
-        }
-/*강아지 사진 여러장*/
-        .sec4{
-            width : 50%; /*사진 나열할 너비 비율*/
-        }
-        article section ul{
-            display : flex;
-            gap : 72px;
-            /*요소들 가운데 정렬*/
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            /*아이템들이 컨테이너 내부에 꽉차서 넘칠경우 줄바꿈함*/
-            flex-wrap : wrap;
-        }
-/*section*/
-        .sec5 {
-            margin-top : 100px;
-            display : flex;
-            flex-direction : column;
-            gap : 28px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-
-        }
-        h4 {
-            font-size : 24px;
-            color : #000000;
-        }
-        .btnSM {
-            width :143px;
-            height : 50px;
-            font-size : 16px;
-            border : none;
-            border-radius : 40px;
-            background-color : #D97652;
-            color : #FFFFFF;
-        }
-/*지도 부분*/
-        .sec6{
-            display : flex;
-            flex-direction : column;
-            gap : 48px;
-        }
-        hr {
-            margin-top : 80px;
-            margin-bottom : 20px;
-        }
-        .sec6-div {
-            display : flex;
-            flex-direction : column;
-            gap : 20px;
-        }
-        h5 {
-            font-size : 35px;
-            color : #000000;
-        }
-        .p5 {
-            font-size : 16px;
-            color : #606367;
-        }
-        .sec6-div2-map {
-            width : 1361px;
-            height : 572px;
-            background-color : #606367;
-        }
-        .sec7-subscribe{
-            width : 1280px;
-            height : 200px;
-            border-radius : 30px;
-            background-color :#263140;
-            display : flex;
-            flex-direction : row;
-            justify-content: center;
-            align-items: center;
-            gap : 163px;
-            position : relative;
-            top : 80px;
-
-        }
-        .div-subscribe {
-            display : flex;
-            flex-direction : column;
-            gap : 18px;
-        }
-        h6 {
-            font-size : 36px;
-            color : #FFFFFF;
-        }
-        .p6 {
-            font-size : 14px;
-            color : #F2E9D8;
-        }
-        .div-mail {
-            display : flex;
-            flex-direction : row;
-            /*justify-content: center;*/
-            align-items: center;
-            width : 530px;
-            height : 60px;
-            background-color : #FFFFFF;
-            border-radius : 60px;
-        }
-        .img-email{
-            margin-left : 30px;
-        }
-        .input {
-            border-width: 0;
-            width : 184px;
-            height: 20px;
-            margin-left : 16px;
-            margin-right : 133px;
-        }
-        .btn-subscribe {
-            width :135px;
-            height : 50px;
-            font-size : 16px;
-            border : none;
-            border-radius : 40px;
-            background-color : #D97652;
-            color : #FFFFFF;
-
-        }
-        footer {
-            display : flex;
-            justify-content: center;
-            height : 160px;
-        }
-        .footer-div {
-            display : flex;
-            flex-direction : row;
-            align-items: center;
-            gap : 826px;
-            width : fit-content;
-        }
-        .footer-logo {
-            width : 226px;
-            height : 70px;
-        }
-        .footer-ul {
-            display : flex;
-            flex-direction : row;
-            align-items: center;
-        }
-    </style>
-
 </head>
 <body>
-<!--hader-->
+<!--haeder-->
     <header>
 <!--        navigation -->
 
@@ -353,7 +56,7 @@
                 <h3 class="h3">dummy text of the printing and dummy</h3>
                 <p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
             </section>
-<!--    고양이 사진 여러장-->
+<!--    고양이 사진들-->
             <section class="sec4">
                 <ul>
                     <li><img src="https://picsum.photos/id/237/378/378"></li>
@@ -378,6 +81,7 @@
             </div>
             <div class="sec6-div2-map" id="map"></div>
         </section>
+<!--subscribe        -->
         <section class="sec7-subscribe">
             <div class="div-subscribe">
                 <h6>Subscribe to our Blog post</h6>
@@ -396,7 +100,7 @@
             <img src="image/img_5.png">
         </section>
     </main>
-
+<!--footer-->
     <footer>
         <div class="footer-div">
             <a href="">
