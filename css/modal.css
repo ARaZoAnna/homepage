@@ -1,0 +1,8 @@
+.btn-modalOpen, .btn-modalClose{
+        cursor: pointer;
+}
+
+#modalBG.hidden {
+    display: none;
+}
+

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/frame.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
 
     <title>main</title>
 </head>
@@ -83,12 +84,12 @@
             <div class="sec6-div2-map" id="map"></div>
         </section>
 <!--modal        -->
-        <div class="modalBG">
+        <div id="modalBG" class="hidden">
             <div class="modal">
                 <img class="modal-img" src="image/cat_modal.png" alt="고양이 얼굴">
                 <p class="modalP">Thank you!</p>
                 <p class="modalP2">Lorem Ipsum is simply dummy text of the printing industry.</p>
-                <button type="button" class="btnModal">OK! I Love HODU</button>
+                <button type="button" class="btn-modalClose">OK! I Love HODU</button>
             </div>
 
         </div>
@@ -102,7 +103,7 @@
             <div class="div-mail">
                 <img class="img-email" src="./image/mail.png">
                 <form action="" method="">
-                    <input class="input" type="email" placeholder="Enter your e-mail address"><button class="btn-subscribe" type="button">Subscribe</button>
+                    <input class="input" type="email" placeholder="Enter your e-mail address"><button class="btn-modalOpen" type="button">Subscribe</button>
                 </form>
             </div>
 <!--banner-->
@@ -147,4 +148,5 @@
 <script src="js/pictures.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d9e98793a80f557892f93a1bfc86164"></script>
 <script src="js/map.js"></script>
+<script src="js/modal.js"></script>
 </html>
