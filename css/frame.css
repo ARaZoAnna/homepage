@@ -98,7 +98,7 @@
             }
 /*강아지 사진들*/
             .sec4{
-                width : 50%; /*사진 나열할 너비 비율*/
+                width : 100%; /*사진 나열할 너비 비율*/
             }
             article section ul{
                 display : flex;
@@ -109,6 +109,11 @@
                 align-items: center;
                 /*아이템들이 컨테이너 내부에 꽉차서 넘칠경우 줄바꿈함*/
                 flex-wrap : wrap;
+            }
+            article section ul li{
+                width : 25%;
+                height : 25%;
+                border-radius : 30px;
             }
 /*section*/
             .sec5 {
@@ -143,56 +148,7 @@
                 width : 1361px;
                 height : 572px;
             }
-/*modal*/
-            #modalBG{
-                /*display: none;*/
-                width: 600px;
-                height: 400px;
-                position: absolute;
-                top: 250%;
-                left:40%;
-                z-index:3;
-                border-radius: 30px;
-                background-image: url("../image/bg_modal.png");
-            }
-            .modal{
-                height: 400px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-            }
-            .modal-img{
-                width: 110px;
-                height: 112px;
-            }
-            .modalP {
-                font-weight: 700;
-                font-size: 36px;
-                line-height: 45px;
-                text-align: center;
-                color:#D97652;
-            }
-            .modalP2{
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 18px;
-                text-align: center;
-            }
-            .btn-modalClose{
-                width: 183px;
-                height: 50px;
-                margin-top: 20px;
-                border: none;
-                border-radius: 40px;
-                background-color: #D97652;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 20px;
-                text-align: center;
-                color: #ffffff;
-            }
+
 /*subscribe*/
             .sec7-subscribe{
                 width : 1280px;
